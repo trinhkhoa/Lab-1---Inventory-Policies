@@ -1,6 +1,7 @@
 # Lab 1 - Inventory-Policies
-## Class: DA350 - 02
-DA 350 SP23 Lab 1 - Inventory Policies
+Class: DA350 - 02
+
+## DA 350 SP23 Lab 1 - Inventory Policies
 ![image](https://user-images.githubusercontent.com/77667121/222989302-5d810e2f-31e9-4f1e-8caa-2c5da4845179.png)
 General Lab Instructions:
 For lab assignments I will provide you the .ipynb file and associated data sets (if any) on Canvas. Please use this .ipynb file as a starting point and write your code and fill in your answers directly in the notebook. I will ask specific questions in bolded font . For written answers, please create the cell as a Markdown type so the text displays neatly. For code, comment sufficiently so I can understand your process. Please try to delete unnecessary, old code so it is easy for me to evluate.
@@ -17,8 +18,15 @@ import scipy
 import matplotlib.pyplot as plt
 ```
 ### 1) First read in Whit's sales data as a pandas data frame using the pd.read_csv function.
+
 ```python
 #Write your code/answer to 1) in this cell
 whit_sale = pd.read_csv('Whits_sales_data.csv')
 whit_sale
+```
+### 2) Fit a normal distribution to the sales data using the scipy.stats.norm.fit() python function. What are the fitted mean and variance of the distribution? You can read about the norm function in the scipy library here: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html#scipy.stats.norm
+```python
+#Write your code/answer to 2) in this cell
+from scipy.stats import norm
+norm.fit(whit_sale['Sales'])
 ```
