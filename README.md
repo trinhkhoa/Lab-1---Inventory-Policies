@@ -9,7 +9,7 @@ Lab 1:
 In this lab you will pose as consultants to help Whit's decide how much custard they should create and stock on a given day. Produce too little, and they lose potential sales and turn away customers. Produce too much, and it may spoil and they have to throw it out. You will explore the connection between predictive and prescriptive analytics and see how the latter can help make decisions like inventory stocking.
 
 Note: The methods presented in this lab are not necessarily the best way to solve the problem. There may exist analytical formulations of the problem which could let us mathematically solve exactly without the need for computation. This lab is intended to introduce the differences between predictive and prescriptive analytics, and demonstrate one way (even if not mathematically the most elegant) to find optimal decisions.
-```{python}
+```python
 #Import packages
 import numpy as np
 import pandas as pd
